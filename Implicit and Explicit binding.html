@@ -1,0 +1,17 @@
+<script>
+    var obj = {
+        name: "Umer",
+        display: function () {
+            console.log(this.name);
+        },
+        display1: () => {
+            console.log(this.name);
+        }
+    };
+
+    var obj1 = {
+        name: "ABC",
+    };
+    obj.display.call(obj1);
+    obj.display1.call(obj1);
+</script>
